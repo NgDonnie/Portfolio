@@ -110,7 +110,7 @@
           "column": 6,
           "specs": [
             {
-              "title": "3. Login with missing credentials",
+              "title": "5. Remove product from cart on listing page",
               "ok": true,
               "tags": [],
               "tests": [
@@ -122,21 +122,21 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 12,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1061,
+                      "duration": 1402,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-20T20:50:13.407Z",
+                      "startTime": "2025-06-21T20:28:46.251Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-f9bce-in-with-missing-credentials-Desktop-Chrome\\trace.zip"
+                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-90297-t-from-cart-on-listing-page-Desktop-Chrome\\trace.zip"
                         }
                       ]
                     }
@@ -144,9 +144,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "13446d0eba02ea26a3a9-833b171331f1701fe121",
+              "id": "13446d0eba02ea26a3a9-dd511951687ae96d6c7e",
               "file": "junior/junior.test.ts",
-              "line": 21,
+              "line": 44,
               "column": 7
             }
           ]
@@ -156,8 +156,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-06-20T20:50:11.855Z",
-    "duration": 2800.185000000056,
+    "startTime": "2025-06-21T20:28:44.646Z",
+    "duration": 3245.14999999851,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
