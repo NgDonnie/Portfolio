@@ -1,0 +1,166 @@
+{
+  "config": {
+    "configFile": "D:\\Automation Test\\Playwright Test\\Portfolio\\playwright.config.ts",
+    "rootDir": "D:/Automation Test/Playwright Test/Portfolio/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "html-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/Automation Test/Playwright Test/Portfolio/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Desktop Chrome",
+        "name": "Desktop Chrome",
+        "testDir": "D:/Automation Test/Playwright Test/Portfolio/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Automation Test/Playwright Test/Portfolio/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/Automation Test/Playwright Test/Portfolio/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Automation Test/Playwright Test/Portfolio/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "D:/Automation Test/Playwright Test/Portfolio/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.53.1",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "junior\\junior.test.ts",
+      "file": "junior/junior.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Junior-Level Tests",
+          "file": "junior/junior.test.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "3. Login with missing credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Desktop Chrome",
+                  "projectName": "Desktop Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1061,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-20T20:50:13.407Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-f9bce-in-with-missing-credentials-Desktop-Chrome\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "13446d0eba02ea26a3a9-833b171331f1701fe121",
+              "file": "junior/junior.test.ts",
+              "line": 21,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-06-20T20:50:11.855Z",
+    "duration": 2800.185000000056,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
