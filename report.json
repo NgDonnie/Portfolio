@@ -86,6 +86,22 @@
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
         "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Automation Test/Playwright Test/Portfolio/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "D:/Automation Test/Playwright Test/Portfolio/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
       }
     ],
     "shard": null,
@@ -110,7 +126,7 @@
           "column": 6,
           "specs": [
             {
-              "title": "12. Validate social media footer links opens a new tab for LinkedIn",
+              "title": "13. Responsive view (mobile 375px)",
               "ok": true,
               "tags": [],
               "tests": [
@@ -118,50 +134,25 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Desktop Chrome",
-                  "projectName": "Desktop Chrome",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 22,
+                      "workerIndex": 35,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2359,
+                      "duration": 1608,
                       "errors": [],
-                      "stdout": [
-                        {
-                          "text": "${iconDetails.name} icon is visible and correctly configured.\n"
-                        },
-                        {
-                          "text": "Clicking LinkedIn icon and waiting for new tab...\n"
-                        },
-                        {
-                          "text": "New tab for LinkedIn opened.\n"
-                        },
-                        {
-                          "text": "New tab for ${iconDetails.name} finished loading.\n"
-                        },
-                        {
-                          "text": "Confirmed new tab navigated to LinkedIn page.\n"
-                        },
-                        {
-                          "text": "Closed new tab for LinkedIn.\n"
-                        },
-                        {
-                          "text": "Confirmed original page is still active after checking ${iconDetails.name}.\n"
-                        },
-                        {
-                          "text": "--- Test for ${iconDetails.name} completed successfully! ---\n"
-                        }
-                      ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-24T19:52:13.590Z",
+                      "startTime": "2025-06-24T20:48:12.064Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-b118d-pens-a-new-tab-for-LinkedIn-Desktop-Chrome\\trace.zip"
+                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-6dd44-sponsive-view-mobile-375px--Mobile-Chrome\\trace.zip"
                         }
                       ]
                     }
@@ -169,10 +160,10 @@
                   "status": "expected"
                 }
               ],
-              "id": "13446d0eba02ea26a3a9-a2e8290b13788326522f",
+              "id": "13446d0eba02ea26a3a9-26dc433d2000db447479",
               "file": "junior/junior.test.ts",
-              "line": 268,
-              "column": 9
+              "line": 315,
+              "column": 7
             }
           ]
         }
@@ -181,8 +172,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-06-24T19:52:11.973Z",
-    "duration": 4210.493000000715,
+    "startTime": "2025-06-24T20:48:10.475Z",
+    "duration": 3354.140000000014,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
