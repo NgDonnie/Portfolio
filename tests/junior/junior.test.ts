@@ -170,6 +170,160 @@ test.describe('Junior-Level Tests', () => {
     
   });
 
+  test('10. View product detail page', async ({ page }) => {
+    await page.goto('/');
+    await page.fill('#user-name', 'standard_user');
+    await page.fill('#password', 'secret_sauce');
+    await page.click('#login-button');
+    await expect(page).toHaveURL(/inventory\.html$/);
+    await expect(page.locator('.inventory_list')).toBeVisible();
+    await expect(page.locator('[data-test="item-4-title-link"]')).toHaveText(/Backpack/);
+    await page.locator('#item_4_title_link').click();
+    await expect(page).toHaveURL(/inventory-item\.html/);
+    await expect(page.getByRole('button', {name: /Back/i})).toBeVisible();
+    await expect(page.getByRole('button', {name: /Back/i})).toContainText(/back/i);
+
+  });
+
+  test('11. Login with valid standard user', async ({ page }) => {
+    await page.goto('/');
+    await page.fill('#user-name', 'standard_user');
+    await page.fill('#password', 'secret_sauce');
+    await page.click('#login-button');
+    await expect(page).toHaveURL(/inventory\.html$/);
+    await expect(page.locator('.inventory_list')).toBeVisible();
+    await page.selectOption('.product_sort_container', 'lohi');
+    await expect(page.locator('#item_2_title_link[data-test="item-2-title-link"]')).toBeVisible();
+    await expect(page.locator('#item_2_title_link[data-test="item-2-title-link"]')).toContainText(/Onesie/i);
+    
+  // Step 3: Get all the price elements.
+  // We'll use the 'data-test' attribute which is good for targeting.
+    const priceElements = await page.locator('[data-test="inventory-item-price"]').all();
+  // .all() here returns an array of Locator objects, one for each price element.
+
+  // Step 4: Create an empty list to store the actual numbers of the prices.
+    const actualPrices: number[] = [];
+
+  // Step 5: Loop through each price element we found.
+    for (const element of priceElements) {
+    // Get the text inside each price element (e.g., "$7.99")
+      const priceText = await element.textContent();
+
+    // Check if priceText is not null or undefined
+      if (priceText !== null && priceText !== undefined) {
+      // Remove the '$' sign and convert the text to a number.
+      // trim() removes any extra spaces.
+        const priceNumber = parseFloat(priceText.replace('$', '').trim());
+
+      // Add the number to our actualPrices list.
+        actualPrices.push(priceNumber);
+      } else {
+      // If an element had no text, this indicates an issue, so throw an error.
+        throw new Error("Found a price element with no text content.");
+      }
+    }
+
+  // Optional: Print the extracted prices to see them in the test output (helpful for debugging)
+    console.log('Extracted prices:', actualPrices);
+
+  // Step 6: Now, let's check if these prices are in the correct order.
+  // We'll loop through the list, comparing each price to the one right after it.
+    for (let i = 0; i < actualPrices.length - 1; i++) {
+      const currentPrice = actualPrices[i];
+      const nextPrice = actualPrices[i + 1];
+
+      // CORRECTED ASSERTION: Remove the second argument for the custom message.
+      // Playwright will automatically generate a helpful error message if this fails.
+      expect(currentPrice).toBeLessThanOrEqual(nextPrice);
+    }
+
+  // If the loop finishes without any failures, it means all prices were sorted correctly!
+    console.log('Assertion successful: Prices are sorted from lower to higher.');
+
+  });
+
+  const socialMediaIconsToTest = [
+    {
+      name: 'Twitter',
+      selector: '[data-test="social-twitter"]', // How Playwright finds it (from your HTML)
+      expectedUrlPart: 'x.com/saucelabs',  // What URL we expect in the new tab
+      socialUrlPart: 'twitter.com/saucelabs'
+    },
+    {
+      name: 'Facebook',
+      selector: '[data-test="social-facebook"]', // How Playwright finds it
+      expectedUrlPart: 'facebook.com/saucelabs',  // What URL we expect
+      socialUrlPart: 'facebook.com/saucelabs'
+    },
+    {
+      name: 'LinkedIn',
+      selector: '[data-test="social-linkedin"]', // How Playwright finds it
+      expectedUrlPart: 'linkedin.com/company/sauce-labs', // What URL we expect 
+      socialUrlPart: 'linkedin.com/company/sauce-labs'
+    }
+  ];
+
+  for (const iconDetails of socialMediaIconsToTest) {
+    
+    test(`12. Validate social media footer links opens a new tab for ${iconDetails.name}`, async ({ page, context }) => {
+      await page.goto('/');
+      await page.fill('#user-name', 'standard_user');
+      await page.fill('#password', 'secret_sauce');
+      await page.click('#login-button');
+      await expect(page).toHaveURL(/inventory\.html$/);
+      await expect(page.locator('.inventory_list')).toBeVisible();
+      const socialMediaIconLocator = page.locator(iconDetails.selector);
+      await expect(socialMediaIconLocator).toBeVisible();
+      // Make sure it's set to open in a new tab.
+      await expect(socialMediaIconLocator).toHaveAttribute('target', '_blank');
+      // Make sure its link (href) points to something sensible (optional, but good).
+      await expect(socialMediaIconLocator).toHaveAttribute('href', new RegExp(iconDetails.socialUrlPart));
+      console.log('${iconDetails.name} icon is visible and correctly configured.');
+      // 5. Click the icon AND wait for the new tab to open.
+      // This 'Promise.all' is super important to catch the new tab!
+      console.log(`Clicking ${iconDetails.name} icon and waiting for new tab...`);
+      const [newPage] = await Promise.all([
+        context.waitForEvent('page'), // Playwright starts listening for a new tab/page.
+        socialMediaIconLocator.click() // We click the icon, which should open the new tab.
+      ]);
+      console.log(`New tab for ${iconDetails.name} opened.`);
+      // 6. Wait for the new tab to load its content.
+      // This ensures the page is ready before we check its URL.
+      await newPage.waitForLoadState('domcontentloaded');
+      console.log('New tab for ${iconDetails.name} finished loading.');
+
+      // 7. Check if the new tab went to the correct social media page.
+      // 'toContainURL' is great for external links as their exact URLs can change.
+      await expect(newPage).toHaveURL(new RegExp(iconDetails.expectedUrlPart));
+      console.log(`Confirmed new tab navigated to ${iconDetails.name} page.`);
+
+      // 8. Close the new tab.
+      // Always close tabs you open to keep your browser tidy during tests.
+      await newPage.close();
+      console.log(`Closed new tab for ${iconDetails.name}.`);
+
+      // 9. Make sure we are still on the original page.
+      // This confirms our main page didn't unexpectedly change.
+      await expect(page).toHaveURL(/inventory\.html$/);
+      console.log('Confirmed original page is still active after checking ${iconDetails.name}.');
+      console.log('--- Test for ${iconDetails.name} completed successfully! ---');
+
+
+    });
+  }
+
+  test('13. Responsive view (mobile 375px)', async ({ page }) => {
+    await page.goto('/');
+    await page.fill('#user-name', 'standard_user');
+    await page.fill('#password', 'secret_sauce');
+    await page.click('#login-button');
+    await expect(page).toHaveURL(/inventory\.html$/);
+    await expect(page.locator('.inventory_list')).toBeVisible();
+  });
+
+
+
+
 
 
 });

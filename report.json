@@ -110,7 +110,7 @@
           "column": 6,
           "specs": [
             {
-              "title": "9. Logout from product page",
+              "title": "12. Validate social media footer links opens a new tab for LinkedIn",
               "ok": true,
               "tags": [],
               "tests": [
@@ -122,21 +122,46 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 34,
+                      "workerIndex": 22,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2139,
+                      "duration": 2359,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "${iconDetails.name} icon is visible and correctly configured.\n"
+                        },
+                        {
+                          "text": "Clicking LinkedIn icon and waiting for new tab...\n"
+                        },
+                        {
+                          "text": "New tab for LinkedIn opened.\n"
+                        },
+                        {
+                          "text": "New tab for ${iconDetails.name} finished loading.\n"
+                        },
+                        {
+                          "text": "Confirmed new tab navigated to LinkedIn page.\n"
+                        },
+                        {
+                          "text": "Closed new tab for LinkedIn.\n"
+                        },
+                        {
+                          "text": "Confirmed original page is still active after checking ${iconDetails.name}.\n"
+                        },
+                        {
+                          "text": "--- Test for ${iconDetails.name} completed successfully! ---\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-23T23:44:47.406Z",
+                      "startTime": "2025-06-24T19:52:13.590Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-Tests-9-Logout-from-product-page-Desktop-Chrome\\trace.zip"
+                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-b118d-pens-a-new-tab-for-LinkedIn-Desktop-Chrome\\trace.zip"
                         }
                       ]
                     }
@@ -144,10 +169,10 @@
                   "status": "expected"
                 }
               ],
-              "id": "13446d0eba02ea26a3a9-bf3f02b1a3d7c0df2b68",
+              "id": "13446d0eba02ea26a3a9-a2e8290b13788326522f",
               "file": "junior/junior.test.ts",
-              "line": 157,
-              "column": 7
+              "line": 268,
+              "column": 9
             }
           ]
         }
@@ -156,8 +181,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-06-23T23:44:45.774Z",
-    "duration": 4031.3279999941587,
+    "startTime": "2025-06-24T19:52:11.973Z",
+    "duration": 4210.493000000715,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
