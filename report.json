@@ -110,7 +110,7 @@
           "column": 6,
           "specs": [
             {
-              "title": "5. Remove product from cart on listing page",
+              "title": "9. Logout from product page",
               "ok": true,
               "tags": [],
               "tests": [
@@ -122,21 +122,21 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 12,
+                      "workerIndex": 34,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1402,
+                      "duration": 2139,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-21T20:28:46.251Z",
+                      "startTime": "2025-06-23T23:44:47.406Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-90297-t-from-cart-on-listing-page-Desktop-Chrome\\trace.zip"
+                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-Tests-9-Logout-from-product-page-Desktop-Chrome\\trace.zip"
                         }
                       ]
                     }
@@ -144,9 +144,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "13446d0eba02ea26a3a9-dd511951687ae96d6c7e",
+              "id": "13446d0eba02ea26a3a9-bf3f02b1a3d7c0df2b68",
               "file": "junior/junior.test.ts",
-              "line": 44,
+              "line": 157,
               "column": 7
             }
           ]
@@ -156,8 +156,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-06-21T20:28:44.646Z",
-    "duration": 3245.14999999851,
+    "startTime": "2025-06-23T23:44:45.774Z",
+    "duration": 4031.3279999941587,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
