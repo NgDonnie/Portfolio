@@ -15,6 +15,14 @@ export class InventoryPage {
     readonly burgerMenuButton: Locator;
     readonly logoutSidebarLink: Locator;
     readonly backpackProductLink: Locator;
+    
+    // --- NEW Locators for Tests 11 & 12 ---
+    readonly productSortContainer: Locator;
+    readonly inventoryItemPrices: Locator;
+    readonly socialTwitterLink: Locator;
+    readonly socialFacebookLink: Locator;
+    readonly socialLinkedinLink: Locator;
+
 
     /**
      * Constructor for the InventoryPage.
@@ -30,6 +38,13 @@ export class InventoryPage {
         this.burgerMenuButton = page.getByRole('button', { name: /Menu/i });
         this.logoutSidebarLink = page.locator('#logout_sidebar_link');
         this.backpackProductLink = page.locator('#item_4_title_link');
+
+        // --- NEW Locator initializations ---
+        this.productSortContainer = page.locator('[data-test="product-sort-container"]');
+        this.inventoryItemPrices = page.locator('[data-test="inventory-item-price"]');
+        this.socialTwitterLink = page.locator('[data-test="social-twitter"]');
+        this.socialFacebookLink = page.locator('[data-test="social-facebook"]');
+        this.socialLinkedinLink = page.locator('[data-test="social-linkedin"]');
     }
 
     // --- Actions ---
@@ -70,6 +85,14 @@ export class InventoryPage {
         await this.logoutSidebarLink.click();
     }
 
+    // --- NEW Actions for Test 11 ---
+    /**
+     * Selects a sorting option from the dropdown.
+     * @param option 'az', 'za', 'lohi', or 'hilo'
+     */
+    async sortProductsBy(option: 'az' | 'za' | 'lohi' | 'hilo') {
+        await this.productSortContainer.selectOption(option);
+    }
 
     // --- Verifications ---
 
@@ -103,5 +126,26 @@ export class InventoryPage {
      */
     async verifyCartBadgeIsNotVisible() {
        await expect(this.shoppingCartBadge).not.toBeVisible();
+    }
+
+    // --- NEW Verifications for Test 11 ---
+    /**
+     * Verifies that the products are sorted by price from low to high.
+     */
+    async verifyProductsAreSortedByPriceLowToHigh() {
+        const priceElements = await this.inventoryItemPrices.all();
+        const actualPrices: number[] = [];
+
+        for (const element of priceElements) {
+            const priceText = await element.textContent();
+            if (priceText) {
+                actualPrices.push(parseFloat(priceText.replace('$', '')));
+            }
+        }
+
+        // Check if the prices are sorted
+        for (let i = 0; i < actualPrices.length - 1; i++) {
+            expect(actualPrices[i]).toBeLessThanOrEqual(actualPrices[i + 1]);
+        }
     }
 }

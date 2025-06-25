@@ -128,7 +128,7 @@
         {
           "title": "Junior-Level Tests @mobile",
           "file": "junior/junior.test.ts",
-          "line": 3,
+          "line": 30,
           "column": 6,
           "specs": [
             {
@@ -146,15 +146,15 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 10,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2808,
+                      "duration": 3275,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-25T13:52:42.563Z",
+                      "startTime": "2025-06-25T20:52:40.271Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -170,7 +170,7 @@
               ],
               "id": "13446d0eba02ea26a3a9-8106928b76d3fd4fb642",
               "file": "junior/junior.test.ts",
-              "line": 4,
+              "line": 31,
               "column": 7
             },
             {
@@ -188,15 +188,15 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 11,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2949,
+                      "duration": 3310,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-25T13:52:42.559Z",
+                      "startTime": "2025-06-25T20:52:40.241Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -212,7 +212,7 @@
               ],
               "id": "13446d0eba02ea26a3a9-d3837c53ff7af7267099",
               "file": "junior/junior.test.ts",
-              "line": 13,
+              "line": 37,
               "column": 7
             },
             {
@@ -230,15 +230,15 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 12,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2809,
+                      "duration": 3361,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-25T13:52:42.600Z",
+                      "startTime": "2025-06-25T20:52:40.261Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -254,7 +254,7 @@
               ],
               "id": "13446d0eba02ea26a3a9-da12c61df94395358082",
               "file": "junior/junior.test.ts",
-              "line": 21,
+              "line": 43,
               "column": 7
             },
             {
@@ -272,15 +272,15 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 13,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2930,
+                      "duration": 3393,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-25T13:52:42.605Z",
+                      "startTime": "2025-06-25T20:52:40.239Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -296,7 +296,7 @@
               ],
               "id": "13446d0eba02ea26a3a9-75d0a8db7fd55e8a6448",
               "file": "junior/junior.test.ts",
-              "line": 28,
+              "line": 51,
               "column": 7
             },
             {
@@ -314,15 +314,15 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 14,
                       "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 3067,
+                      "duration": 3318,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-25T13:52:42.617Z",
+                      "startTime": "2025-06-25T20:52:40.318Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -338,7 +338,7 @@
               ],
               "id": "13446d0eba02ea26a3a9-36823bd0d4f017cb3e1e",
               "file": "junior/junior.test.ts",
-              "line": 44,
+              "line": 61,
               "column": 7
             },
             {
@@ -356,15 +356,15 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 15,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 3083,
+                      "duration": 3182,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-25T13:52:42.603Z",
+                      "startTime": "2025-06-25T20:52:40.305Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -380,7 +380,7 @@
               ],
               "id": "13446d0eba02ea26a3a9-9e868a53057ef3b64d2b",
               "file": "junior/junior.test.ts",
-              "line": 63,
+              "line": 74,
               "column": 7
             },
             {
@@ -398,15 +398,15 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 16,
                       "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 3591,
+                      "duration": 3517,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-25T13:52:42.601Z",
+                      "startTime": "2025-06-25T20:52:40.309Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -422,7 +422,7 @@
               ],
               "id": "13446d0eba02ea26a3a9-108a9749000e646f8230",
               "file": "junior/junior.test.ts",
-              "line": 84,
+              "line": 83,
               "column": 7
             },
             {
@@ -440,15 +440,15 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 17,
                       "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 3813,
+                      "duration": 3799,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-25T13:52:42.660Z",
+                      "startTime": "2025-06-25T20:52:40.344Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -464,7 +464,7 @@
               ],
               "id": "13446d0eba02ea26a3a9-f813e7dc859b1d116107",
               "file": "junior/junior.test.ts",
-              "line": 117,
+              "line": 98,
               "column": 7
             },
             {
@@ -482,15 +482,15 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 12,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3263,
+                      "duration": 3236,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-25T13:52:45.643Z",
+                      "startTime": "2025-06-25T20:52:43.902Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -506,7 +506,7 @@
               ],
               "id": "13446d0eba02ea26a3a9-83c4492548195c161d6d",
               "file": "junior/junior.test.ts",
-              "line": 157,
+              "line": 118,
               "column": 7
             },
             {
@@ -524,15 +524,15 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 11,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2940,
+                      "duration": 3072,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-25T13:52:45.796Z",
+                      "startTime": "2025-06-25T20:52:43.912Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -548,7 +548,7 @@
               ],
               "id": "13446d0eba02ea26a3a9-40d3540ee0a352fd7b3b",
               "file": "junior/junior.test.ts",
-              "line": 173,
+              "line": 128,
               "column": 7
             },
             {
@@ -566,22 +566,15 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2841,
+                      "duration": 3180,
                       "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Extracted prices: [ \u001b[33m7.99\u001b[39m, \u001b[33m9.99\u001b[39m, \u001b[33m15.99\u001b[39m, \u001b[33m15.99\u001b[39m, \u001b[33m29.99\u001b[39m, \u001b[33m49.99\u001b[39m ]\n"
-                        },
-                        {
-                          "text": "Assertion successful: Prices are sorted from lower to higher.\n"
-                        }
-                      ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-25T13:52:45.869Z",
+                      "startTime": "2025-06-25T20:52:43.913Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -597,11 +590,11 @@
               ],
               "id": "13446d0eba02ea26a3a9-2b4bcc12a8afa64442b2",
               "file": "junior/junior.test.ts",
-              "line": 188,
+              "line": 138,
               "column": 7
             },
             {
-              "title": "12. Validate social media footer links opens a new tab for Twitter",
+              "title": "12. Validate social media footer link for Twitter",
               "ok": true,
               "tags": [
                 "mobile"
@@ -615,46 +608,21 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 13,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 5279,
+                      "duration": 8986,
                       "errors": [],
-                      "stdout": [
-                        {
-                          "text": "${iconDetails.name} icon is visible and correctly configured.\n"
-                        },
-                        {
-                          "text": "Clicking Twitter icon and waiting for new tab...\n"
-                        },
-                        {
-                          "text": "New tab for Twitter opened.\n"
-                        },
-                        {
-                          "text": "New tab for ${iconDetails.name} finished loading.\n"
-                        },
-                        {
-                          "text": "Confirmed new tab navigated to Twitter page.\n"
-                        },
-                        {
-                          "text": "Closed new tab for Twitter.\n"
-                        },
-                        {
-                          "text": "Confirmed original page is still active after checking ${iconDetails.name}.\n"
-                        },
-                        {
-                          "text": "--- Test for ${iconDetails.name} completed successfully! ---\n"
-                        }
-                      ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-25T13:52:46.093Z",
+                      "startTime": "2025-06-25T20:52:43.994Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-53e65-opens-a-new-tab-for-Twitter-Desktop-Chrome\\trace.zip"
+                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-6f22f-dia-footer-link-for-Twitter-Desktop-Chrome\\trace.zip"
                         }
                       ]
                     }
@@ -662,13 +630,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "13446d0eba02ea26a3a9-82bd9984968c1999bbb4",
+              "id": "13446d0eba02ea26a3a9-c6a7b8dcf782bce415da",
               "file": "junior/junior.test.ts",
-              "line": 268,
+              "line": 152,
               "column": 9
             },
             {
-              "title": "12. Validate social media footer links opens a new tab for Facebook",
+              "title": "12. Validate social media footer link for Facebook",
               "ok": true,
               "tags": [
                 "mobile"
@@ -682,113 +650,21 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 4695,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "${iconDetails.name} icon is visible and correctly configured.\n"
-                        },
-                        {
-                          "text": "Clicking Facebook icon and waiting for new tab...\n"
-                        },
-                        {
-                          "text": "New tab for Facebook opened.\n"
-                        },
-                        {
-                          "text": "New tab for ${iconDetails.name} finished loading.\n"
-                        },
-                        {
-                          "text": "Confirmed new tab navigated to Facebook page.\n"
-                        },
-                        {
-                          "text": "Closed new tab for Facebook.\n"
-                        },
-                        {
-                          "text": "Confirmed original page is still active after checking ${iconDetails.name}.\n"
-                        },
-                        {
-                          "text": "--- Test for ${iconDetails.name} completed successfully! ---\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-25T13:52:46.195Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-424c7-pens-a-new-tab-for-Facebook-Desktop-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "13446d0eba02ea26a3a9-71d2e62404741896bff9",
-              "file": "junior/junior.test.ts",
-              "line": 268,
-              "column": 9
-            },
-            {
-              "title": "12. Validate social media footer links opens a new tab for LinkedIn",
-              "ok": true,
-              "tags": [
-                "mobile"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Chrome",
-                  "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 5,
+                      "workerIndex": 15,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 3766,
+                      "duration": 6299,
                       "errors": [],
-                      "stdout": [
-                        {
-                          "text": "${iconDetails.name} icon is visible and correctly configured.\n"
-                        },
-                        {
-                          "text": "Clicking LinkedIn icon and waiting for new tab...\n"
-                        },
-                        {
-                          "text": "New tab for LinkedIn opened.\n"
-                        },
-                        {
-                          "text": "New tab for ${iconDetails.name} finished loading.\n"
-                        },
-                        {
-                          "text": "Confirmed new tab navigated to LinkedIn page.\n"
-                        },
-                        {
-                          "text": "Closed new tab for LinkedIn.\n"
-                        },
-                        {
-                          "text": "Confirmed original page is still active after checking ${iconDetails.name}.\n"
-                        },
-                        {
-                          "text": "--- Test for ${iconDetails.name} completed successfully! ---\n"
-                        }
-                      ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-25T13:52:46.197Z",
+                      "startTime": "2025-06-25T20:52:44.074Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-9934d-pens-a-new-tab-for-LinkedIn-Desktop-Chrome\\trace.zip"
+                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-a682d-ia-footer-link-for-Facebook-Desktop-Chrome\\trace.zip"
                         }
                       ]
                     }
@@ -796,9 +672,51 @@
                   "status": "expected"
                 }
               ],
-              "id": "13446d0eba02ea26a3a9-1533935ad761f0f7e665",
+              "id": "13446d0eba02ea26a3a9-ddb6e7a3aede6276a397",
               "file": "junior/junior.test.ts",
-              "line": 268,
+              "line": 152,
+              "column": 9
+            },
+            {
+              "title": "12. Validate social media footer link for LinkedIn",
+              "ok": true,
+              "tags": [
+                "mobile"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Desktop Chrome",
+                  "projectName": "Desktop Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 4710,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-25T20:52:44.158Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-808d3-ia-footer-link-for-LinkedIn-Desktop-Chrome\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "13446d0eba02ea26a3a9-518a300599e794e0fbba",
+              "file": "junior/junior.test.ts",
+              "line": 152,
               "column": 9
             },
             {
@@ -816,15 +734,15 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 16,
                       "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 3237,
+                      "duration": 2981,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-25T13:52:46.611Z",
+                      "startTime": "2025-06-25T20:52:44.227Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -840,7 +758,7 @@
               ],
               "id": "13446d0eba02ea26a3a9-fcba9e1f0f18b3fbf065",
               "file": "junior/junior.test.ts",
-              "line": 315,
+              "line": 171,
               "column": 7
             },
             {
@@ -858,10 +776,10 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 17,
                       "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 2523,
+                      "duration": 2824,
                       "errors": [],
                       "stdout": [
                         {
@@ -870,7 +788,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-25T13:52:46.834Z",
+                      "startTime": "2025-06-25T20:52:44.491Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -886,7 +804,7 @@
               ],
               "id": "13446d0eba02ea26a3a9-ce45259b168df95ddb41",
               "file": "junior/junior.test.ts",
-              "line": 362,
+              "line": 187,
               "column": 7
             }
           ]
@@ -903,7 +821,7 @@
         {
           "title": "Junior-Level-Mobile Tests @mobile",
           "file": "junior/junior_mobile.test.ts",
-          "line": 3,
+          "line": 24,
           "column": 6,
           "specs": [
             {
@@ -921,15 +839,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 18,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1892,
+                      "duration": 1644,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-25T13:52:50.404Z",
+                      "startTime": "2025-06-25T20:52:48.242Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -945,7 +863,7 @@
               ],
               "id": "323f78ca89ab74f6da72-370243b7e52e435a09e3",
               "file": "junior/junior_mobile.test.ts",
-              "line": 5,
+              "line": 26,
               "column": 9
             }
           ]
@@ -955,8 +873,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-06-25T13:52:40.631Z",
-    "duration": 11817.975,
+    "startTime": "2025-06-25T20:52:38.302Z",
+    "duration": 15224.898999999976,
     "expected": 17,
     "skipped": 0,
     "unexpected": 0,
