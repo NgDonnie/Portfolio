@@ -49,28 +49,36 @@ export default defineConfig({
     {
       name: 'Desktop Chrome',
       use: { ...devices['Desktop Chrome'] },
+      // This project will run all tests NOT tagged with @mobile
+      testIgnore: '**/*_mobile.test.ts',
     },
 
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
+      // This project will run all tests NOT tagged with @mobile
+      testIgnore: '**/*_mobile.test.ts',
     },
 
     {
       name: 'Mobile Safari',
       use: { ...devices['Desktop Safari'] },
+      // This project will run all tests NOT tagged with @mobile
+      testIgnore: '**/*_mobile.test.ts',
     },
 
     /* Test against mobile viewports. */
     {
       name: 'Mobile Chrome',
       use: { 
-        ...devices['iPhone SE'], 
+        //...devices['iPhone SE'], 
         viewport: { 
             width: 375,
             height: 667 
         }, 
       },
+      // This project will ONLY run tests tagged with @mobile
+      testMatch: '**/*_mobile.test.ts',
 
     },
     // {
