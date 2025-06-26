@@ -15,8 +15,6 @@ export class InventoryPage {
     readonly burgerMenuButton: Locator;
     readonly logoutSidebarLink: Locator;
     readonly backpackProductLink: Locator;
-    
-    // --- NEW Locators for Tests 11 & 12 ---
     readonly productSortContainer: Locator;
     readonly inventoryItemPrices: Locator;
     readonly socialTwitterLink: Locator;
@@ -85,7 +83,6 @@ export class InventoryPage {
         await this.logoutSidebarLink.click();
     }
 
-    // --- NEW Actions for Test 11 ---
     /**
      * Selects a sorting option from the dropdown.
      * @param option 'az', 'za', 'lohi', or 'hilo'
@@ -128,7 +125,6 @@ export class InventoryPage {
        await expect(this.shoppingCartBadge).not.toBeVisible();
     }
 
-    // --- NEW Verifications for Test 11 ---
     /**
      * Verifies that the products are sorted by price from low to high.
      */

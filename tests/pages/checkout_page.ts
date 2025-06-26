@@ -12,8 +12,6 @@ export class CheckoutPage {
     readonly postalCodeInput: Locator;
     readonly continueButton: Locator;
     readonly errorMessage: Locator;
-
-    // --- NEW Locator for Test 14 ---
     readonly errorCloseButton: Locator;
 
     // --- Locators for Step Two ---
@@ -82,7 +80,6 @@ export class CheckoutPage {
         await this.backHomeButton.click();
     }
 
-    // --- NEW Action for Test 14 ---
     /**
      * Clicks the 'x' button to close the error message container.
      */
