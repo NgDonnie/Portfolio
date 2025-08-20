@@ -20,6 +20,9 @@ export class InventoryPage {
     readonly socialTwitterLink: Locator;
     readonly socialFacebookLink: Locator;
     readonly socialLinkedinLink: Locator;
+    readonly inventoryItems: Locator;
+    readonly inventoryText: Locator;
+    readonly addToCartButton: Locator;
 
 
     /**
@@ -43,6 +46,9 @@ export class InventoryPage {
         this.socialTwitterLink = page.locator('[data-test="social-twitter"]');
         this.socialFacebookLink = page.locator('[data-test="social-facebook"]');
         this.socialLinkedinLink = page.locator('[data-test="social-linkedin"]');
+        this.inventoryItems = page.locator('.inventory_item');
+        this.inventoryText = page.locator('.inventory_item_name');
+        this.addToCartButton = page.locator('btn btn_primary btn_small btn_inventory');
     }
 
     // --- Actions ---
@@ -52,6 +58,26 @@ export class InventoryPage {
      */
     async addBackpackToCart() {
         await this.backpackAddToCartButton.click();
+    }
+
+    async addProductToCart(itemName: string){
+        
+        const itemCard = this.inventoryItems.filter({ hasText: itemName });
+        const addButton = itemCard.locator('button:has-text("Add to cart")');
+
+        await expect(addButton).toBeVisible();
+        await addButton.click();
+
+        const removeButton = itemCard.locator('button:has-text("Remove")');
+        await expect(removeButton).toBeVisible();
+        
+    }
+
+    // Add multiple items
+    async addItemsToCart(itemNames: string[]) {
+        for (const name of itemNames) {
+            await this.addProductToCart(name);
+        }
     }
 
     /**
@@ -81,6 +107,11 @@ export class InventoryPage {
     async logout() {
         await this.burgerMenuButton.click();
         await this.logoutSidebarLink.click();
+    }
+
+    // Get all product names currently displayed on the inventory page
+    async getAllProductNames(): Promise<string[]> {
+        return this.inventoryText.allInnerTexts();
     }
 
     /**

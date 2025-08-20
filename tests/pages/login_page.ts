@@ -75,4 +75,18 @@ export class LoginPage {
         await expect(this.errorMessage).toBeVisible();
         await expect(this.errorMessage).toHaveText(/is required/);
     }
+
+    /**
+     * Asserts that the current URL matches the inventory page.
+     */
+    async verifyLoggedIn() {
+        await expect(this.page).toHaveURL('**/inventory.html');
+    }
+
+    /**
+     * Asserts that the 'Products' title is visible on the inventory page.
+     */
+    async verifyProductsTitleVisible() {
+        await expect(this.page.locator('.title')).toHaveText('Products');
+    }
 }

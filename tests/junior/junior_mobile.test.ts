@@ -1,16 +1,16 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, Page } from '@playwright/test';
 import { LoginPage } from '../pages/login_page';
 import { InventoryPage } from '../pages/inventory_page';
 
   let loginPage: LoginPage;
   let inventoryPage: InventoryPage;
 
-  const viewPortSize = async (page) => {
+  const viewPortSize = async (page: Page) => {
     const viewportSize = page.viewportSize();
     await expect(viewportSize?.width).toBe(375);
   };
 
-  const responsiveTest = async (page) => {
+  const responsiveTest = async (page: Page) => {
     await expect(page.getByRole('button' , {name: /Open/i})).toBeVisible;
     await page.getByRole('button' , {name: /Open/i}).click();
     await expect(page.locator('a#logout_sidebar_link[data-test="logout-sidebar-link"]')).toContainText(/Logout/i);

@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 8
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -44,7 +44,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 8
+          "actualWorkers": 1
         },
         "id": "Desktop Chrome",
         "name": "Desktop Chrome",
@@ -62,7 +62,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 8
+          "actualWorkers": 1
         },
         "id": "firefox",
         "name": "firefox",
@@ -80,7 +80,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 8
+          "actualWorkers": 1
         },
         "id": "Mobile Safari",
         "name": "Mobile Safari",
@@ -98,7 +98,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 8
+          "actualWorkers": 1
         },
         "id": "Mobile Chrome",
         "name": "Mobile Chrome",
@@ -119,150 +119,22 @@
   },
   "suites": [
     {
-      "title": "junior\\junior.test.ts",
-      "file": "junior/junior.test.ts",
+      "title": "Mid\\mid.test.ts",
+      "file": "Mid/mid.test.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Junior-Level Tests @mobile",
-          "file": "junior/junior.test.ts",
-          "line": 30,
+          "title": "Data-Driven Login Test",
+          "file": "Mid/mid.test.ts",
+          "line": 53,
           "column": 6,
           "specs": [
             {
-              "title": "1. Login with valid standard user",
+              "title": "3. Add multiple items to cart and verify count",
               "ok": true,
-              "tags": [
-                "mobile"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Chrome",
-                  "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 10,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 3275,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-25T20:52:40.271Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-3aa21-in-with-valid-standard-user-Desktop-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "13446d0eba02ea26a3a9-8106928b76d3fd4fb642",
-              "file": "junior/junior.test.ts",
-              "line": 31,
-              "column": 7
-            },
-            {
-              "title": "2. Login with locked-out user",
-              "ok": true,
-              "tags": [
-                "mobile"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Chrome",
-                  "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3310,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-25T20:52:40.241Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-d82d1--Login-with-locked-out-user-Desktop-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "13446d0eba02ea26a3a9-d3837c53ff7af7267099",
-              "file": "junior/junior.test.ts",
-              "line": 37,
-              "column": 7
-            },
-            {
-              "title": "3. Login with missing credentials",
-              "ok": true,
-              "tags": [
-                "mobile"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Chrome",
-                  "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 3361,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-25T20:52:40.261Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-e96e4-in-with-missing-credentials-Desktop-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "13446d0eba02ea26a3a9-da12c61df94395358082",
-              "file": "junior/junior.test.ts",
-              "line": 43,
-              "column": 7
-            },
-            {
-              "title": "4. Add product to cart from inventory",
-              "ok": true,
-              "tags": [
-                "mobile"
-              ],
+              "tags": [],
               "tests": [
                 {
                   "timeout": 60000,
@@ -273,528 +145,27 @@
                   "results": [
                     {
                       "workerIndex": 13,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 3393,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-25T20:52:40.239Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-d6128-duct-to-cart-from-inventory-Desktop-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "13446d0eba02ea26a3a9-75d0a8db7fd55e8a6448",
-              "file": "junior/junior.test.ts",
-              "line": 51,
-              "column": 7
-            },
-            {
-              "title": "5. Remove product from cart on listing page",
-              "ok": true,
-              "tags": [
-                "mobile"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Chrome",
-                  "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 14,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 3318,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-25T20:52:40.318Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-35bb2-t-from-cart-on-listing-page-Desktop-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "13446d0eba02ea26a3a9-36823bd0d4f017cb3e1e",
-              "file": "junior/junior.test.ts",
-              "line": 61,
-              "column": 7
-            },
-            {
-              "title": "6. Navigate to cart page",
-              "ok": true,
-              "tags": [
-                "mobile"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Chrome",
-                  "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 15,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 3182,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-25T20:52:40.305Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-9aea4-ile-6-Navigate-to-cart-page-Desktop-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "13446d0eba02ea26a3a9-9e868a53057ef3b64d2b",
-              "file": "junior/junior.test.ts",
-              "line": 74,
-              "column": 7
-            },
-            {
-              "title": "7. Checkout with missing information",
-              "ok": true,
-              "tags": [
-                "mobile"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Chrome",
-                  "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 16,
-                      "parallelIndex": 6,
-                      "status": "passed",
-                      "duration": 3517,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-25T20:52:40.309Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-0dec6-ut-with-missing-information-Desktop-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "13446d0eba02ea26a3a9-108a9749000e646f8230",
-              "file": "junior/junior.test.ts",
-              "line": 83,
-              "column": 7
-            },
-            {
-              "title": "8. Complete successful checkout",
-              "ok": true,
-              "tags": [
-                "mobile"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Chrome",
-                  "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 17,
-                      "parallelIndex": 7,
-                      "status": "passed",
-                      "duration": 3799,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-25T20:52:40.344Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-12393-omplete-successful-checkout-Desktop-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "13446d0eba02ea26a3a9-f813e7dc859b1d116107",
-              "file": "junior/junior.test.ts",
-              "line": 98,
-              "column": 7
-            },
-            {
-              "title": "9. Logout from product page",
-              "ok": true,
-              "tags": [
-                "mobile"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Chrome",
-                  "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 3236,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-25T20:52:43.902Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-cf5c1--9-Logout-from-product-page-Desktop-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "13446d0eba02ea26a3a9-83c4492548195c161d6d",
-              "file": "junior/junior.test.ts",
-              "line": 118,
-              "column": 7
-            },
-            {
-              "title": "10. View product detail page",
-              "ok": true,
-              "tags": [
-                "mobile"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Chrome",
-                  "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3072,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-25T20:52:43.912Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-84e66-10-View-product-detail-page-Desktop-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "13446d0eba02ea26a3a9-40d3540ee0a352fd7b3b",
-              "file": "junior/junior.test.ts",
-              "line": 128,
-              "column": 7
-            },
-            {
-              "title": "11. Login with valid standard user",
-              "ok": true,
-              "tags": [
-                "mobile"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Chrome",
-                  "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 10,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3180,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-25T20:52:43.913Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-d05bd-in-with-valid-standard-user-Desktop-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "13446d0eba02ea26a3a9-2b4bcc12a8afa64442b2",
-              "file": "junior/junior.test.ts",
-              "line": 138,
-              "column": 7
-            },
-            {
-              "title": "12. Validate social media footer link for Twitter",
-              "ok": true,
-              "tags": [
-                "mobile"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Chrome",
-                  "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 13,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 8986,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-25T20:52:43.994Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-6f22f-dia-footer-link-for-Twitter-Desktop-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "13446d0eba02ea26a3a9-c6a7b8dcf782bce415da",
-              "file": "junior/junior.test.ts",
-              "line": 152,
-              "column": 9
-            },
-            {
-              "title": "12. Validate social media footer link for Facebook",
-              "ok": true,
-              "tags": [
-                "mobile"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Chrome",
-                  "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 15,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 6299,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-25T20:52:44.074Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-a682d-ia-footer-link-for-Facebook-Desktop-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "13446d0eba02ea26a3a9-ddb6e7a3aede6276a397",
-              "file": "junior/junior.test.ts",
-              "line": 152,
-              "column": 9
-            },
-            {
-              "title": "12. Validate social media footer link for LinkedIn",
-              "ok": true,
-              "tags": [
-                "mobile"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Chrome",
-                  "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 14,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 4710,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-25T20:52:44.158Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-808d3-ia-footer-link-for-LinkedIn-Desktop-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "13446d0eba02ea26a3a9-518a300599e794e0fbba",
-              "file": "junior/junior.test.ts",
-              "line": 152,
-              "column": 9
-            },
-            {
-              "title": "14. Error message disappears after valid input",
-              "ok": true,
-              "tags": [
-                "mobile"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Chrome",
-                  "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 16,
-                      "parallelIndex": 6,
-                      "status": "passed",
-                      "duration": 2981,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-25T20:52:44.227Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-738d5-isappears-after-valid-input-Desktop-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "13446d0eba02ea26a3a9-fcba9e1f0f18b3fbf065",
-              "file": "junior/junior.test.ts",
-              "line": 171,
-              "column": 7
-            },
-            {
-              "title": "15. Visual snapshot of product page",
-              "ok": true,
-              "tags": [
-                "mobile"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Chrome",
-                  "projectName": "Desktop Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 17,
-                      "parallelIndex": 7,
-                      "status": "passed",
-                      "duration": 2824,
+                      "duration": 4177,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Full page screenshot after login saved.\n"
+                          "text": "2\n"
+                        },
+                        {
+                          "text": "items to add: Sauce Labs Backpack,Sauce Labs Bike Light\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-06-25T20:52:44.491Z",
+                      "startTime": "2025-08-19T20:31:42.019Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior-Junior-Level-3e284-al-snapshot-of-product-page-Desktop-Chrome\\trace.zip"
+                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\Mid-mid-Data-Driven-Login--46fc8-ms-to-cart-and-verify-count-Desktop-Chrome\\trace.zip"
                         }
                       ]
                     }
@@ -802,69 +173,10 @@
                   "status": "expected"
                 }
               ],
-              "id": "13446d0eba02ea26a3a9-ce45259b168df95ddb41",
-              "file": "junior/junior.test.ts",
-              "line": 187,
+              "id": "57895a7c91f188dfaaa5-389dfae751b7150d03fa",
+              "file": "Mid/mid.test.ts",
+              "line": 124,
               "column": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "junior\\junior_mobile.test.ts",
-      "file": "junior/junior_mobile.test.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Junior-Level-Mobile Tests @mobile",
-          "file": "junior/junior_mobile.test.ts",
-          "line": 24,
-          "column": 6,
-          "specs": [
-            {
-              "title": "13. Responsive view (mobile 375px)",
-              "ok": true,
-              "tags": [
-                "mobile"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 18,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1644,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-06-25T20:52:48.242Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation Test\\Playwright Test\\Portfolio\\test-results\\junior-junior_mobile-Junio-c903f-sponsive-view-mobile-375px--Mobile-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "323f78ca89ab74f6da72-370243b7e52e435a09e3",
-              "file": "junior/junior_mobile.test.ts",
-              "line": 26,
-              "column": 9
             }
           ]
         }
@@ -873,9 +185,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-06-25T20:52:38.302Z",
-    "duration": 15224.898999999976,
-    "expected": 17,
+    "startTime": "2025-08-19T20:31:40.368Z",
+    "duration": 6062.521999999881,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
